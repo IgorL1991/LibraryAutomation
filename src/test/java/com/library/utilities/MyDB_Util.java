@@ -236,4 +236,19 @@ public class MyDB_Util {
         return rowDataAsLst ;
     }
 
+    /**
+     * destroy method to clean up all the resources after being used
+     */
+    public static void destroy(){
+        // WE HAVE TO CHECK IF WE HAVE THE VALID OBJECT FIRST BEFORE CLOSING THE RESOURCE
+        // BECAUSE WE CAN NOT TAKE ACTION ON AN OBJECT THAT DOES NOT EXIST
+        try {
+            if( resultSet!=null)  resultSet.close();
+            if( statement!=null)  statement.close();
+            if( connection!=null)  connection.close();
+        } catch (Exception e) {
+            System.out.println("ERROR OCCURRED WHILE CLOSING RESOURCES " + e.getMessage() );
+        }
+    }
+
 }

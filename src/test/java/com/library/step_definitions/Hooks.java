@@ -5,10 +5,7 @@ In the class we will be able to pass pre- & post- conditions to
  each scenario and each step
  */
 
-import com.library.utilities.BrowserUtils;
-import com.library.utilities.ConfigurationReader;
-import com.library.utilities.DB_Util;
-import com.library.utilities.Driver;
+import com.library.utilities.*;
 import io.cucumber.java.After;
 import io.cucumber.java.AfterStep;
 import io.cucumber.java.Scenario;
@@ -32,7 +29,6 @@ public class Hooks {
         System.out.println("====this will only apply to scenarios with @db tag");
     }
 
-
     @After
     public void teardownScenario(Scenario scenario){
 
@@ -46,8 +42,7 @@ public class Hooks {
 
         }
         Driver.closeDriver();
-        DB_Util.destroy();
-
+        MyDB_Util.destroy();
         //System.out.println("====Closing browser using cucumber @After");
         //System.out.println("====Scenario ended/ Take screenshot if failed!");
     }
