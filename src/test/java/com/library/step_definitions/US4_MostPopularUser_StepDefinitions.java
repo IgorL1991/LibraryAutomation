@@ -5,7 +5,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 
-public class MostPopularUser_StepDefinitions {
+public class US4_MostPopularUser_StepDefinitions {
     @When("I execute a query to find the most popular user")
     public void i_execute_a_query_to_find_the_most_popular_user() {
         MyDB_Util.runQuery("SELECT full_name, count(*)\n" +

@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.Select;
 import java.util.ArrayList;
 import java.util.List;
 
-public class BookCategoriesUIandDBMatching_StepDefinitions {
+public class US6_BookCategoriesUIandDBMatching_StepDefinitions {
     // creating an object of booksPage class
     BooksPage booksPage = new BooksPage();
     // declaring an empty List

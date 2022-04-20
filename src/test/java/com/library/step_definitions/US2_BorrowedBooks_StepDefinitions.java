@@ -9,7 +9,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 
-public class BorrowedBooks_StepDefinitions {
+public class US2_BorrowedBooks_StepDefinitions {
     LoginPage loginPage = new LoginPage();
     HomePage homePage = new HomePage();
     int expectedBorrowedBooks;

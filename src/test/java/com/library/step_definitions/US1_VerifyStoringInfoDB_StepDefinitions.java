@@ -5,10 +5,10 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
-import java.sql.SQLException;
+
 import java.util.List;
 
-public class VerifyStoringInfoDB_StepDefinitions {
+public class US1_VerifyStoringInfoDB_StepDefinitions {
     String url = ConfigurationReader.getProperty("url");
     String username = ConfigurationReader.getProperty("username");
     String password = ConfigurationReader.getProperty("password");

@@ -5,7 +5,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 
-public class GenreMostBorrowedBook_StepDefinitions {
+public class US3_GenreMostBorrowedBook_StepDefinitions {
     @When("I execute a query to find the most popular genre")
     public void i_execute_a_query_to_find_the_most_popular_genre() {
         MyDB_Util.runQuery("SELECT bc.name, COUNT(book_id) AS COUNT FROM book_borrow bb\n" +
