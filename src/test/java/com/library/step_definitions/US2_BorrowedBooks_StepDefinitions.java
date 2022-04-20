@@ -15,7 +15,6 @@ public class US2_BorrowedBooks_StepDefinitions {
     int expectedBorrowedBooks;
     @Given("I am in the homepage of the library app")
     public void i_am_in_the_homepage_of_the_library_app() {
-        Driver.getDriver().get(ConfigurationReader.getProperty("env"));
         loginPage.loginAsLibrarian();
     }
 

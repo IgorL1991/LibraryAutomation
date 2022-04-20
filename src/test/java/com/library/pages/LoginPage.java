@@ -21,6 +21,7 @@ public class LoginPage {
     public WebElement signInButton;
 
     public void loginAsLibrarian() {
+        Driver.getDriver().get(ConfigurationReader.getProperty("env"));
         String username = ConfigurationReader.getProperty("librarianUser");
         String password = ConfigurationReader.getProperty("librarianPassword");
         userInput.sendKeys(username);
@@ -29,6 +30,7 @@ public class LoginPage {
     }
 
     public void loginAsStudent() {
+        Driver.getDriver().get(ConfigurationReader.getProperty("env"));
         String username = ConfigurationReader.getProperty("studentUser");
         String password = ConfigurationReader.getProperty("studentPassword");
         userInput.sendKeys(username);
